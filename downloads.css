@@ -1,0 +1,149 @@
+/* Improved Styling with Enhanced Responsiveness and Hover Effects */
+
+/* Main section styling */
+.services {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Main text styling */
+.main-text {
+    margin-bottom: 30px;
+}
+
+.main-text h2 {
+    font-size: 2.5em;
+    color: #034B03;
+    margin-bottom: 10px;
+}
+
+.main-text span {
+    display: block;
+    font-size: 1.2em;
+    color: #034B03;
+}
+
+/* Container for search and items */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px; /* Added padding for smaller screens */
+}
+
+/* Search input and button */
+.download {
+    margin-bottom: 20px;
+}
+
+#search {
+    padding: 10px;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Limiting width on larger screens */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #E1AD01 !important;
+    color: #034B03;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle box shadow */
+}
+
+#search-button:hover {
+    background-color: #E1AD01;
+    transform: translateY(-2px); /* Lift button slightly on hover */
+}
+
+/* Flexbox for responsive layout */
+.allService {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styling for each service item */
+.servicesItem {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Added transition for hover effect */
+}
+
+.servicesItem:hover {
+    transform: translateY(-5px); /* Lift item slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced box shadow on hover */
+    border-color: #E1AD01; /* Border color change on hover */
+}
+
+.pdf-title {
+    font-size: 1.2em;
+    color: #034B03;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Added transition for text color change */
+}
+.btn{
+    background-color: #E1AD01 !important;
+    
+}
+.sp{
+    margin-top: -33px;
+}
+.servicesItem:hover .pdf-title {
+    color: #E1AD01; /* Text color change on hover */
+}
+@media (max-width: 1024px) {
+    .servicesItem {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-text h2 {
+        font-size: 2em;
+    }
+
+    .main-text span {
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 0 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .allService {
+        flex-direction: column;
+        align-items: center; /* Center items in a column */
+    }
+
+    .servicesItem {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Further adjustment for very small screens */
+@media (max-width: 480px) {
+    .main-text h2 {
+        font-size: 1.5em;
+    }
+
+    .pdf-title {
+        font-size: 1em;
+    }
+
+    #search {
+        max-width: 100%;
+    }
+}
